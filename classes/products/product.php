@@ -10,13 +10,13 @@ abstract class Product
     private $quantity;      // Quantità disponibile del prodotto
     private $price;         // Prezzo del prodotto
 
-    // Costruttore che richiede obbligatoriamente nome, quantità e prezzo del prodotto
+    // Costruttore che richiede obbligatoriamente animale, nome, quantità e prezzo del prodotto
     public function __construct($animal, $name, $quantity, $price)
     {
-        $this-> animal = $animal;
-        $this-> name = $name;
-        $this-> quantity = $quantity;
-        $this-> price = $price;
+        $this->animal = $animal;
+        $this->name = $name;
+        $this->quantity = $quantity;
+        $this->price = $price;
     }
 
     // Getters & Setters per gli attributi
