@@ -40,11 +40,13 @@ $frisbee->setDescription('Frisbee giocattolo per cani diametro 20cm');
 var_dump($frisbee);
 
 // Test utente non registrato
-$buyer1 = new Buyer('Pinco', 'Pallino', 'Via dei Programmatori', 99, '00185', 'Roma', 'pincopallino@mail.it');
+$buyer1 = new Buyer('Pinco', 'Pallino', 'Via dei Programmatori', 99, '00185', 'Roma', 'pincopallino@mail.it', 1234567890123456, '2022-12-31');
 var_dump($buyer1);
+$buyer1->checkCreditCard();
 
 // Test utente registrato
-$buyer2 = new LoggedBuyer('Tal', 'Dei Tali', 'Piazza Sviluppatore', 10, '00199', 'Roma', 'taldeitali@mail.it', '12345678');
-$buyer2->setDateOfBirth('19-12-1986');
+$buyer2 = new LoggedBuyer('Tal', 'Dei Tali', 'Piazza Sviluppatore', 10, '00199', 'Roma', 'taldeitali@mail.it', '12345678', 9999999999999999, '2021-12-31');
+$buyer2->setDateOfBirth('1986-12-19');
 $buyer2->setPhone(3331234567);
 var_dump($buyer2);
+$buyer2->checkCreditCard();

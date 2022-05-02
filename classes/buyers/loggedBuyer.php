@@ -8,9 +8,9 @@ class LoggedBuyer extends Buyer
     protected $password;    // Password del cliente
 
     // Costruttore
-    public function __construct($name, $surname, $address, $houseNumber, $postalCode , $city, $email, $password)
+    public function __construct($name, $surname, $address, $houseNumber, $postalCode , $city, $email, $password, $creditCard, $creditCardExpiration)
     {
-        parent::__construct($name, $surname, $address, $houseNumber, $postalCode , $city, $email);
+        parent::__construct($name, $surname, $address, $houseNumber, $postalCode , $city, $email, $creditCard, $creditCardExpiration);
         $this->password = $password;
     }
 
