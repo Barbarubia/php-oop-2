@@ -86,10 +86,10 @@ class Buyer
     {
         if (date('Y-m-d') > $this->getCreditCardExpiration())
         {
-            echo 'La carta di credito introdotta non può essere usata in quanto è scaduta.';
+            echo '<strong>La carta di credito introdotta non può essere usata in quanto è scaduta.</strong>';
         } else
         {
-            echo 'La carta di credito introdotta è valida.';
+            echo '<strong>La carta di credito introdotta è valida.</strong>';
         }
     }
 }
